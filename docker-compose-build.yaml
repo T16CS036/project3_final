@@ -1,9 +1,9 @@
 version: "3"
 services:
-  reverseproxy:
+  udagram-reverseproxy:
     build:
-      context: ./udagram-reverseproxy
-    image: reverseproxy
+      context: ./udagram-udagram-reverseproxy
+    image: udagram-reverseproxy
   backend_user:
     build:
       context: ./udagram-api-user
