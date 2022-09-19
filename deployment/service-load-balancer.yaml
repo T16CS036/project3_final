@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+   
+kind: Deployment
+   
+metadata:
+   
+  labels:
+   
+    app.kubernetes.io/name: load-balancer-example
+   
+  name: frontend
+   
+spec:
+   
+  replicas: 5
+   
+  selector:
+   
+    matchLabels:
+   
+      app.kubernetes.io/name: load-balancer-example
+   
+  template:
+   
+    metadata:
+   
+      labels:
+   
+        app.kubernetes.io/name: load-balancer-example
+   
+    spec:
+   
+      containers:
+   
+      - image: minhdth/udagram-frontend:v1
+   
+        name: frontend
+   
+        ports:
+   
+        - containerPort: 8080
