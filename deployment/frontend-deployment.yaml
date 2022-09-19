@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-        - image: minhdth/udagram-frontend:v1
+        - image: minhdth/udagram-frontend:v5
           name: frontend
           imagePullPolicy: Always
           ports:
@@ -28,4 +28,3 @@ spec:
             limits:
               memory: "1024Mi"
               cpu: "500m"
-      # restartPolicy: Always

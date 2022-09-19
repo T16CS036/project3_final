@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: arn:aws:s3:::preject3-272309578712-dev
+  AWS_BUCKET: preject3-272309578712-dev
   AWS_PROFILE: default
   AWS_REGION: us-east-1
   JWT_SECRET: testing
   POSTGRES_DB: postgres
   POSTGRES_HOST: database-1.cd5amzkcep8i.us-east-1.rds.amazonaws.com
+  POSTGRES_PORT: "5432"
   URL: http://localhost:8100
-  PORT: "5432"
 metadata:
   name: env-config
