@@ -3,7 +3,7 @@
 setx POSTGRES_USERNAME project3
 setx POSTGRES_PASSWORD 272309578712
 setx POSTGRES_HOST database-1.cd5amzkcep8i.us-east-1.rds.amazonaws.com
-setx POSTGRES_DB database-1
+setx POSTGRES_DB postgres
 setx AWS_BUCKET preject3-272309578712-dev
 setx AWS_REGION us-east-1
 setx AWS_PROFILE default
